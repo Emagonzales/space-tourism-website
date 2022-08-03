@@ -9,7 +9,7 @@ function Navbar(props) {
     const location = useLocation();
 
     const handleClick = (position) => {
-        props.changeBg("layout " + position);
+        props.changeBg(position);
     }
     
     const  openMenu = () => {

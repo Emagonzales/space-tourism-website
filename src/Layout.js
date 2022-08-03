@@ -4,12 +4,14 @@ import Navbar from './pages/components/navbar';
 
 function Layout() {
 
-  const [sectionBg, setSectionBg] = useState("layout home");
+  const [section, setSection] = useState("home");
 
   return (
-    <div className={sectionBg}>
-      <Navbar changeBg={sectionBg => setSectionBg(sectionBg)}/>
-      <Outlet />
+    <div className={'layout '+ section}>
+      <Navbar changeBg={section => setSection(section)}/>
+      <div className={'main-container '+ section}>
+        <Outlet />
+      </div>
     </div>
   );
 }

@@ -75,6 +75,16 @@ h1,h2,h3,h4, .subhead-1{
 }
 h1{
     font-size: 150px;
+    line-height: 1.1;
+
+    @media screen and (max-width: 991px) {
+        line-height: 1;
+    }
+
+    @media screen and (max-width:600px) {
+        font-size: 80px;
+        line-height: 1.25;
+    }
 }
 h2{
     font-size: 100px;
@@ -96,6 +106,16 @@ h5, .subhead-2, .nav-text{
 h5{
     font-size: 28px;
     letter-spacing: 4.75px;
+
+    @media screen and (max-width: 991px) {
+        font-size: 20px;
+        letter-spacing: 3.38px;
+    }
+
+    @media screen and (max-width:600px) {
+        font-size: 16px;
+        letter-spacing: 2.7px;
+    }
 }
 .subhead-2{
     font-size: 14px;
@@ -112,7 +132,7 @@ h5{
         letter-spacing: 2.36px;
     }
 
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 600px) {
         font-size: 16px;
         letter-spacing: 2.7px;
     }
@@ -126,7 +146,7 @@ h5{
             display: none;
         }
 
-        @media screen and (max-width: 500px) {
+        @media screen and (max-width: 600px) {
             display: block;
             margin-right: 10px;
         }
@@ -138,6 +158,16 @@ body{
     font-weight: 400;
     font-size: 18px;
     line-height: 1.7;
+    
+    @media screen and (max-width: 991px) {
+        font-size: 16px;
+        line-height: 1.75;
+    }
+
+    @media screen and (max-width:600px) {
+        font-size: 15px;
+        line-height: 1.6;
+    }
 }
 
 /*NORMALIZE*/
@@ -163,7 +193,7 @@ a, button{
     height: 100vh;
     position: relative;
 
-    padding: 40px 0;
+    padding: 40px 0 0;
 
     @media screen and (max-width: 991px) {
         padding: 0;
@@ -250,5 +280,7 @@ a, button{
 }
 
 @import './components/navbar';
+@import './components/buttons';
 
 /*PAGES*/
+@import './home';
