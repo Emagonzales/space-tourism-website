@@ -233,6 +233,22 @@ a, button{
     }
 }
 
+.main-container{
+    width: 90%;
+    max-width: 1110px;
 
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 30px;
+
+    @media screen and (max-width: 991px) {
+        column-gap: 10px;
+    }
+
+}
+
+@import './components/navbar';
 
 /*PAGES*/
