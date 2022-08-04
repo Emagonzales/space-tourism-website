@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './styles/main.scss';
 import Layout from "./Layout";
 import Home from "./pages/Home";
-import Destination from "./pages/Destination";
+import Destinations from "./pages/Destinations";
 import Crew from "./pages/Crew";
 import Technology from "./pages/Technology";
 import NoPage from "./pages/NoPage";
@@ -16,7 +16,7 @@ root.render(
     <Routes>
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
-        <Route path="destination" element={<Destination />} />
+        <Route path="destinations" element={<Destinations />} />
         <Route path="crew" element={<Crew />} />
         <Route path="technology" element={<Technology />} />
         <Route path="*" element={<NoPage />} />

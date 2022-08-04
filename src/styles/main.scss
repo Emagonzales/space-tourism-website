@@ -215,7 +215,7 @@ a, button{
         }
     }
 
-    &.destination{
+    &.destinations{
         background: url('../assets/destination/background-destination-desktop.jpg') no-repeat center;
         background-size: 100% 100%;
 
@@ -284,3 +284,4 @@ a, button{
 
 /*PAGES*/
 @import './home';
+@import './destination';

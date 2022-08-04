@@ -1,0 +1,89 @@
+@keyframes rotatePlanet{
+    0%{
+        transform:rotateZ(0);
+    }
+    100%{
+        
+        transform:rotateZ(-30deg);
+    }
+}
+
+.main-container.destinations{
+
+    margin-top: 75px;
+
+    .l-container{
+
+        grid-column: 1 / span 6;
+
+        .section-title{
+            text-transform: uppercase;
+            margin-bottom: 95px;
+
+            @media screen and (max-width: 1370px) {
+                margin-bottom: 55px;
+            }
+
+            span{
+                opacity: 0.25;
+                font-weight: 800;
+                margin-right: 25px;
+            }
+        }
+
+
+        .planet-image{
+            width: 90%;
+            max-width: 445px;
+            margin-left: 65px;
+
+            animation: rotatePlanet 35s ease-in-out 2s infinite alternate; 
+
+            @media screen and (max-width: 1370px) {
+                width: 65%;
+            }
+
+        }
+    }
+
+    .r-container{
+        margin-top: 100px;
+        grid-column: 8 / span 5;
+
+        @media screen and (max-width: 1370px) {
+            margin-top: 30px;
+        }
+
+        .dest-nav{
+            display: flex;
+            .nav-btn{
+                margin-right: 35px;
+
+                &:last-of-type{
+                    margin-right: 0;
+                }
+            }
+        }
+
+        .dest-details{
+            display: flex;
+            border-top: 1px solid #383b4b;
+            padding-top: 25px;
+            margin-top: 50px;
+            .box{
+
+                &:first-child{
+                    margin-right: 80px;
+                }
+
+                .subhead-2, .subhead-1{
+                    text-transform: uppercase;
+                }
+                .subhead-2{
+                    margin-bottom: 12px;
+                }
+            }
+        }
+    }
+}
+
