@@ -25,7 +25,7 @@ function Navbar(props) {
             {!mobileMenu && (
                 <div className={'nav-wrapper nav-text desktop'}>
                     <Link className={location.pathname === '/'?'nav-item active':'nav-item'} to='/' onClick={() => handleClick("home")}><span>00</span>Home</Link>
-                    <Link className={location.pathname === '/destination'?'nav-item active':'nav-item'} to='/destination' onClick={() => handleClick("destination")}><span>01</span>Destination</Link>
+                    <Link className={location.pathname === '/destinations'?'nav-item active':'nav-item'} to='/destinations' onClick={() => handleClick("destination")}><span>01</span>Destination</Link>
                     <Link className={location.pathname === '/crew'?'nav-item active':'nav-item'} to='/crew' onClick={() => handleClick("crew")}><span>02</span>Crew</Link>
                     <Link className={location.pathname === '/technology'?'nav-item active':'nav-item'} to='/technology' onClick={() => handleClick("technology")}><span>03</span>technology</Link>
                 </div>
@@ -35,7 +35,7 @@ function Navbar(props) {
             {mobileMenu && (
                 <div className={'nav-wrapper nav-text mobile'}>
                     <Link className={location.pathname === '/'?'nav-item active':'nav-item'} to='/' onClick={() => handleClick("home")}><span>00</span>Home</Link>
-                    <Link className={location.pathname === '/destination'?'nav-item active':'nav-item'} to='/destination' onClick={() => handleClick("destination")}><span>01</span>Destination</Link>
+                    <Link className={location.pathname === '/destinations'?'nav-item active':'nav-item'} to='/destinations' onClick={() => handleClick("destination")}><span>01</span>Destination</Link>
                     <Link className={location.pathname === '/crew'?'nav-item active':'nav-item'} to='/crew' onClick={() => handleClick("crew")}><span>02</span>Crew</Link>
                     <Link className={location.pathname === '/technology'?'nav-item active':'nav-item'} to='/technology' onClick={() => handleClick("technology")}><span>03</span>technology</Link>
                 </div>

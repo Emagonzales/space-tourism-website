@@ -4,7 +4,6 @@ import { useLocation } from "react-router-dom";
 import Navbar from './pages/components/navbar';
 
 function Layout() {
-
   
   const [section, setSection] = useState("");
   const location = useLocation();
@@ -24,16 +23,18 @@ function Layout() {
         setSection("home")
         break;
     }
-  });
+  }, [location.pathname]);
   
 
   return (
-    <div className={'layout '+ section}>
-      <Navbar changeBg={section => setSection(section)}/>
-      <div className={'main-container '+ section}>
-        <Outlet />
+
+      <div className={'layout '+ section}>
+        <Navbar changeBg={section => setSection(section)}/>
+        <div className={'main-container '+ section}>
+          <Outlet/>
+        </div>
       </div>
-    </div>
+
   );
 }
 
