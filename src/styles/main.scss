@@ -78,10 +78,11 @@ h1{
     line-height: 1.1;
 
     @media screen and (max-width: 991px) {
+        font-size: 100px;
         line-height: 1;
     }
 
-    @media screen and (max-width:600px) {
+    @media screen and (max-width:500px) {
         font-size: 80px;
         line-height: 1.25;
     }
@@ -112,7 +113,7 @@ h5{
         letter-spacing: 3.38px;
     }
 
-    @media screen and (max-width:600px) {
+    @media screen and (max-width:500px) {
         font-size: 16px;
         letter-spacing: 2.7px;
     }
@@ -132,7 +133,7 @@ h5{
         letter-spacing: 2.36px;
     }
 
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 500px) {
         font-size: 16px;
         letter-spacing: 2.7px;
     }
@@ -146,7 +147,7 @@ h5{
             display: none;
         }
 
-        @media screen and (max-width: 600px) {
+        @media screen and (max-width: 500px) {
             display: block;
             margin-right: 10px;
         }
@@ -164,7 +165,7 @@ body{
         line-height: 1.75;
     }
 
-    @media screen and (max-width:600px) {
+    @media screen and (max-width:500px) {
         font-size: 15px;
         line-height: 1.6;
     }
@@ -206,12 +207,14 @@ a, button{
 
         @media screen and (max-width: 991px) {
             background: url('../assets/home/background-home-tablet.jpg') no-repeat center;
-            background-size: 100% 100%;
+            height: fit-content;
+            background-size: cover;
         }
 
         @media screen and (max-width: 500px) {
+            height: unset;
             background: url('../assets/home/background-home-mobile.jpg') no-repeat center;
-            background-size: 100% 100%;
+            background-size: cover;
         }
     }
 
