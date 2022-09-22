@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './styles/main.scss';
+
 import Layout from "./Layout";
 import Home from "./pages/Home";
 import Destinations from "./pages/Destinations";
