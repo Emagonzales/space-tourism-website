@@ -3,8 +3,6 @@ import React, { useState } from "react";
 
 function Destinations() {
 
-  /*TODO: versione mobile*/
-
   const [dataDestination, setDataDestination] = useState(data.destinations[0]);
   const [active, setActive] = useState(0);
   const image = dataDestination.images.png;

@@ -36,6 +36,7 @@
     text-transform: uppercase;
 
     cursor: pointer;
+    transition: all .5s ease-in-out;
 
     padding-bottom: 12px;
     border-bottom: 3px solid rgba(255, 255, 255, 0);
@@ -52,4 +53,36 @@
         border-bottom: 3px solid #979797;
     }
 
+}
+
+.bullets-btn{
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+
+    background: $white;
+    opacity: 0.17;
+    margin-right: 25px;
+
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+
+    @media screen and (max-width: 767px) {
+        width: 10px;
+        height: 10px;
+        margin-right: 16px;
+    }
+
+    &.active{
+        opacity: 1;
+    }
+
+    &:hover{
+        background-color: $tropical-blue;
+        opacity: 1;
+    }
+
+    &:last-child{
+        margin-right: 0;
+    }
 }

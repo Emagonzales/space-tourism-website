@@ -1,0 +1,168 @@
+.main-container.crew {
+
+    margin-top: 65px;
+    overflow: hidden;
+
+    @media screen and (max-width: 991px) {
+        margin-top: 40px;
+    }
+
+    @media screen and (max-width: 500px) {
+        margin-top: 25px;
+    }
+
+    .section-title.mob{
+        display: none;
+
+        @media screen and (max-width: 500px) {
+            display: block;
+            grid-column: 1 / span 12;
+
+            span{
+                margin-right: 16px;
+            }
+        }
+    }
+
+    .flex-container {
+        grid-column: 1 / span 12;
+
+        display: flex;
+
+            
+        @media screen and (max-width: 1024px) {
+           flex-wrap: wrap;
+           width: 100%;
+           justify-content: center;
+        }
+
+
+        @media screen and (max-width: 500px) {
+          flex-wrap: wrap-reverse;
+        }
+
+        .l-container {
+
+            width: fit-content;
+            max-width: 640px;
+
+            @media screen and (max-width: 1024px) {
+               max-width: none;
+            }
+
+            @media screen and (max-width: 500px) {
+                display: flex;
+                flex-direction: column-reverse;
+            }
+
+            .section-title {
+                margin-bottom: 155px;
+
+                @media screen and (max-width: 1024px) {
+                    margin-bottom: 60px;
+                }
+
+                @media screen and (max-width: 500px) {
+                    display:none;
+                }
+            }
+
+            .information {
+                margin-bottom: 100px;
+
+                @media screen and (max-width: 1024px) {
+                    width: 100%;
+                    margin-bottom: 40px;
+                }
+
+                .role {
+                    text-transform: uppercase;
+                    opacity: 0.5;
+                    line-height: normal;
+
+                    @media screen and (max-width: 1024px) {
+                        text-align: center;
+                    }
+
+                    @media screen and (max-width: 767px) {
+                        font-size: 24px;
+                    }
+
+                    @media screen and (max-width: 500px) {
+                        font-size: 16px;
+                    }
+                }
+
+                .name {
+                    text-transform: uppercase;
+                    margin-bottom: 15px;
+
+                    @media screen and (max-width: 1024px) {
+                        text-align: center;
+                    }
+
+                    @media screen and (max-width: 767px) {
+                        font-size: 40px;
+                    }
+
+                    @media screen and (max-width: 500px) {
+                        font-size: 24px;
+                    }
+                }
+
+                .bio {
+                    color: $tropical-blue;
+                    padding-right: 85px;
+
+                    @media screen and (max-width: 1024px) {
+                        text-align: center;
+                        padding: 0 116px;
+                    }
+
+                    @media screen and (max-width: 500px) {
+                        padding: 0 5px;
+                    }
+                }
+            }
+
+            .crew-bullets {
+                display: flex;
+                margin-bottom: 90px;
+
+                @media screen and (max-width: 1024px) {
+                    justify-content: center;
+                    margin-bottom: 40px;
+                }
+
+                @media screen and (max-width: 500px) {
+                    margin: 32px 0;
+                }
+            }
+
+        }
+
+        .r-container {
+            width: 100%;
+            max-width: 615px;
+            display: flex;
+            justify-content: end;
+
+            @media screen and (max-width: 500px) {
+                justify-content: center;
+                border-bottom: solid 2px #383b4b;
+            }
+
+            .crew-image {
+                width: 90%;
+                object-position: bottom;
+                object-fit: contain;
+
+                @media screen and (max-width: 500px) {
+                    width: 60%;
+                }
+            }
+        }
+    }
+
+
+}
