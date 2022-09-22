@@ -12,9 +12,20 @@
 
     margin-top: 75px;
 
+    @media screen and (max-width: 991px) {
+        margin-top: 40px;
+    }
+
+
     .l-container{
 
         grid-column: 1 / span 6;
+
+        @media screen and (max-width: 991px) {
+            grid-column: 1 / span 12;
+            display: flex;
+            flex-direction: column;
+        }
 
         .section-title{
             text-transform: uppercase;
@@ -37,10 +48,16 @@
             max-width: 445px;
             margin-left: 65px;
 
-            animation: rotatePlanet 35s ease-in-out 2s infinite alternate; 
+            animation: rotatePlanet 30s ease-in-out 2s infinite alternate; 
 
             @media screen and (max-width: 1370px) {
                 width: 65%;
+            }
+
+            @media screen and (max-width: 991px) {
+                animation: none;
+                margin: 0 auto;
+                max-width: 300px;
             }
 
         }
@@ -54,8 +71,18 @@
             margin-top: 30px;
         }
 
+        @media screen and (max-width: 991px) {
+            grid-column: 1 / span 12;
+            margin-top: 50px;
+        }
+
         .dest-nav{
             display: flex;
+
+            @media screen and (max-width: 991px) {
+               justify-content: center;
+            }
+
             .nav-btn{
                 margin-right: 35px;
 
@@ -65,12 +92,44 @@
             }
         }
 
+        .dest-name{
+            text-transform: uppercase;
+            margin-top: 40px;
+            font-size: 100px;
+            
+            @media screen and (max-width: 991px) {
+                text-align: center;
+                font-size: 80px;
+            }
+        }
+
+        .dest-description{
+            color: $tropical-blue;
+            line-height: 28px;
+        
+            @media screen and (max-width: 991px) {
+                text-align: center;
+                padding: 8px 50px 0;
+            }
+        }
+
         .dest-details{
             display: flex;
             border-top: 1px solid #383b4b;
             padding-top: 25px;
             margin-top: 50px;
+
+            @media screen and (max-width: 991px) {
+               padding-top: 28px;
+               justify-content: center;
+               padding-bottom: 60px;
+            }
+
             .box{
+
+                @media screen and (max-width: 991px) {
+                    text-align: center;
+                }
 
                 &:first-child{
                     margin-right: 80px;
@@ -81,6 +140,7 @@
                 }
                 .subhead-2{
                     margin-bottom: 12px;
+                    color: $tropical-blue;
                 }
             }
         }

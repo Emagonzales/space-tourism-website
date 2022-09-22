@@ -196,6 +196,8 @@ a, button{
 
     padding: 40px 0 0;
 
+    overflow-x: hidden;
+
     @media screen and (max-width: 991px) {
         padding: 0;
     }
