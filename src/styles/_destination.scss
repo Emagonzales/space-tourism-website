@@ -16,6 +16,10 @@
         margin-top: 40px;
     }
 
+    @media screen and (max-width: 500px) {
+        margin-top: 25px;
+    }
+
 
     .l-container{
 
@@ -33,6 +37,11 @@
 
             @media screen and (max-width: 1370px) {
                 margin-bottom: 55px;
+            }
+
+            @media screen and (max-width: 500px) {
+               text-align: center;
+               margin-bottom: 30px;
             }
 
             span{
@@ -76,6 +85,10 @@
             margin-top: 50px;
         }
 
+        @media screen and (max-width: 500px) {
+            margin-top: 25px;
+        }
+
         .dest-nav{
             display: flex;
 
@@ -101,6 +114,10 @@
                 text-align: center;
                 font-size: 80px;
             }
+
+            @media screen and (max-width: 500px) {
+                margin-top: 20px;
+            }
         }
 
         .dest-description{
@@ -110,6 +127,11 @@
             @media screen and (max-width: 991px) {
                 text-align: center;
                 padding: 8px 50px 0;
+            }
+
+            @media screen and (max-width: 500px) {
+                line-height: 25px;
+                padding: 0 55px;
             }
         }
 
@@ -125,21 +147,36 @@
                padding-bottom: 60px;
             }
 
+            @media screen and (max-width: 500px) {
+                margin-top: 32px;
+                padding-top: 32px;
+                flex-direction: column;
+            }
+
             .box{
 
                 @media screen and (max-width: 991px) {
                     text-align: center;
                 }
 
+                @media screen and (max-width: 500px) {
+                    width: 100%;
+                }
+
                 &:first-child{
                     margin-right: 80px;
+
+                    @media screen and (max-width: 500px) {
+                        margin-right: 0;
+                        margin-bottom: 32px;
+                    }
                 }
 
                 .subhead-2, .subhead-1{
                     text-transform: uppercase;
                 }
                 .subhead-2{
-                    margin-bottom: 12px;
+                    margin-bottom: 10px;
                     color: $tropical-blue;
                 }
             }
