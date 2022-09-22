@@ -86,3 +86,80 @@
         margin-right: 0;
     }
 }
+
+.tech-nav-btn{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    border: solid 1px rgba(255, 255, 255, 0.25);
+
+    color: $white;
+    font-family: $bellafair;
+    font-size: 32px;
+    letter-spacing: 2px;
+    text-align: center;
+
+    cursor: pointer;
+    margin-bottom: 32px;
+    transition: all .5s ease-in-out;
+
+    @media screen and (max-width: 1024px) {
+        width: 60px;
+        height: 60px;
+        font-size: 24px;
+        letter-spacing: 1.5px;
+
+        margin-bottom: 0;
+        margin-right: 16px;
+    }
+
+    @media screen and (max-width: 500px) {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+
+    &:hover{
+        background-color: $white;
+        color: $blue;
+    }
+
+    &.active{
+        opacity: 1;
+        background-color: $white;
+        color: $blue;
+
+        &:hover{
+            background: none;
+            color: $white;
+        }
+    }
+
+    &:last-child{
+        margin-bottom: 0;
+        margin-right: 0;
+    }
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+  
+  /* Track */
+::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.452);
+    border-radius: 20px;
+}
+  
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: $white;
+    border-radius: 20px;
+}
+  
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: $tropical-blue;
+}
