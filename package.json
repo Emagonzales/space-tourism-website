@@ -1,5 +1,6 @@
 {
-  "name": "space-tourism-website-main",
+  "homepage": "https://emagonzales.github.io/space-tourism-website",
+  "name": "space-tourism-website",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
