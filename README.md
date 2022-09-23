@@ -21,7 +21,7 @@ This is a solution to the [Space tourism multi-page website](https://www.fronten
 ### Links
 
 - Solution URL: https://github.com/Emagonzales/space-tourism-website
-- Live Site URL: 
+- Live Site URL: https://emagonzales.github.io/space-tourism-website/#/
 
 ## My Process
 
